@@ -1,4 +1,4 @@
-package stacks_queue;
+
 import java.util.Scanner;
 class linearQueue{
 	int []queue;

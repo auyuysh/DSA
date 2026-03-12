@@ -1,1 +1,36 @@
+Find the Majority Element that occurs more than N/2 times
+Problem Statement: Given an integer array nums of size n, return the majority element of the array.
+The majority element of an array is an element that appears more than n/2 times in the array. The array is guaranteed to have a 
+majority element.
 
+Approach : Using HashMap to get the element at O(1) time complexity.
+Traverse the elements one by one and increase the value of that element in the HashMap.
+As the counter increases more than N/2 where N is the size of the array , print the element and break the loop.
+
+Time complexity : O(N).
+
+import java.util.*;
+class majorityElement{
+    public static void main(String args[])
+    {
+         int nums []= {1, 1, 1, 2, 1, 2};
+         HashMap<Integer,Integer> hm =new HashMap<>();
+         for(int i =0;i<nums.length;i++)
+         {
+             hm.put(nums[i],0);
+         }
+         int n = nums.length/2;
+         for(int i=0;i<nums.length;i++)
+         {
+             int counter = hm.get(nums[i])+1;
+             if(counter > n)
+             {
+                 System.out.println(nums[i]);
+                 break;
+             }
+             hm.put(nums[i],counter);
+             
+             
+         }
+    }
+}

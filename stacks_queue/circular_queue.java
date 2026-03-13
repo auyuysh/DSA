@@ -1,3 +1,10 @@
+/*
+Problem Statement: Implement a circular queue data structure that supports enqueue, dequeue, and display operations, handling wrap-around in a fixed-size array.
+
+Approach: Use an array with front (f) and rear (r) pointers. For enqueue, add to rear with modulo. For dequeue, remove from front with modulo. Handle empty and full conditions.
+
+Time Complexity: O(1) for enqueue, dequeue, and display (amortized for display).
+*/
 import java.util.Scanner;
 
 class CircularQueue {

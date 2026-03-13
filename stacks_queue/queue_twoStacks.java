@@ -1,3 +1,10 @@
+/*
+Problem Statement: Implement a queue using two stacks that supports enqueue, dequeue, and display operations.
+
+Approach: Use two stacks, s1 for enqueue (push), s2 for dequeue (pop). When s2 is empty, transfer all from s1 to s2. Display by printing s2 (reversed) then s1.
+
+Time Complexity: Amortized O(1) for enqueue and dequeue (due to occasional O(n) transfer), O(n) for display.
+*/
 import java.util.Stack;
 class queue{
     Stack<Integer> s1 = new Stack<>();

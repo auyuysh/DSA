@@ -1,3 +1,10 @@
+/*
+Problem Statement: Implement a stack data structure using a linked list that supports push, pop, and display operations.
+
+Approach: Use a linked list with head and tail pointers. Push adds to tail, pop removes from tail (by traversing to second last). Maintain size.
+
+Time Complexity: O(1) for push, O(n) for pop and display.
+*/
 class node{
     int val;
     node next;

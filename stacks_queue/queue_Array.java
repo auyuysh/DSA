@@ -1,3 +1,10 @@
+/*
+Problem Statement: Implement a linear queue data structure using an array that supports enqueue, dequeue, and display operations.
+
+Approach: Use an array with front and rear indices. Enqueue increments rear and adds element. Dequeue increments front and removes element. Check for empty/full conditions.
+
+Time Complexity: O(1) for enqueue and dequeue, O(n) for display.
+*/
 import java.util.Scanner;
 
 class LinearQueue {

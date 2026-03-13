@@ -1,3 +1,10 @@
+/*
+Problem Statement: Implement a stack data structure using an array that supports push, pop, and display operations.
+
+Approach: Use an array with a size counter. Push adds to the end, pop removes from the end. Check for full/empty.
+
+Time Complexity: O(1) for push and pop, O(n) for display.
+*/
 class Stack{
     int capacity;
     int stack[];int size=0;

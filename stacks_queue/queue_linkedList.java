@@ -1,4 +1,11 @@
 
+/*
+Problem Statement: Implement a queue data structure using a linked list that supports enqueue, dequeue, and display operations.
+
+Approach: Use two pointers, left (front) and right (rear). Enqueue adds to right, dequeue removes from left. Maintain size for empty checks.
+
+Time Complexity: O(1) for enqueue and dequeue, O(n) for display.
+*/
 import java.util.*;
 
 class node{

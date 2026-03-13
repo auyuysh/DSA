@@ -1,3 +1,10 @@
+/*
+Problem Statement: Implement a dynamic queue using an array that resizes when full, supporting enqueue, dequeue, and display operations.
+
+Approach: Use an array that doubles in size when full. Copy elements to new array, reset front to 0. Enqueue and dequeue as in linear queue.
+
+Time Complexity: Amortized O(1) for enqueue (due to occasional O(n) resize), O(1) for dequeue, O(n) for display.
+*/
 import java.util.Scanner;
 
 class LinearQueue {
